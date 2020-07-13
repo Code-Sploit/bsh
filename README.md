@@ -13,7 +13,7 @@ If you want to see the *available commands for bsh* then go down the page.
     # chmod 755 remove
     # ./remove
 
-# MORE INFO
+# More Info
     *bsh* is a system that works with sessions.
     If you choose a username in the shell then you get a session named $username.active.u .
     Which is located at $bshdir/tmp/a/ .
@@ -24,7 +24,7 @@ If you want to see the *available commands for bsh* then go down the page.
     Freezing: Still working...
     Watching: Still working...
 
-# COMMANDS FOR *DEFAULT* USERS
+# Commands For *DEFAULT* Users
     echo "text"
     remove "filename"
     add "filename"
@@ -42,7 +42,7 @@ If you want to see the *available commands for bsh* then go down the page.
     help "cmd"
     ?
 
-# COMMANDS FOR *ADMIN* USERS
+# Commands For *ADMIN* Users
     echo "text"
     remove "filename"
     add "filename"
