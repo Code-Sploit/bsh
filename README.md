@@ -14,7 +14,7 @@ If you want to see the *available commands for bsh* then go down the page.
     # ./remove
 
 # More Info
-    *bsh* is a system that works with sessions.
+    bsh is a system that works with sessions.
     If you choose a username in the shell then you get a session named $username.active.u .
     Which is located at $bshdir/tmp/a/ .
     Also you get a pid for starting the python script, that file is located in $bshdir/.data/p/ .
