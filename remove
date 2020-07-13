@@ -1,13 +1,4 @@
-rm -rf /usr/local/extra_bin/.bsh
-
-rm local/extra_bin/.tmp/remove
-rm local/extra_bin/.data/remove
-rm local/extra_bin/.scrty/remove
-
 rm -rf /usr/local/extra_bin/.bsh/
-rm /usr/local/extra_bin/.bsh/
-rm /usr/local/extra_bin/.bsh/
-rm /usr/local/extra_bin/.bsh/
 
 rm /usr/bin/bsh
 
