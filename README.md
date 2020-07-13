@@ -18,7 +18,8 @@ If you want to see the *available commands for bsh* then go down the page.
     If you choose a username in the shell then you get a session named $username.active.u .
     Which is located at $bshdir/tmp/a/ .
     Also you get a pid for starting the python script, that file is located in $bshdir/.data/p/ .
-    There is also a admin_pass file, but i am not going to reveal it's location in case hackers hjiack the password! You can set it when you run the install script.
+    There is also a admin_pass file, but i am not going to reveal it's location in case hackers hjiack the password!
+    You can set it when you run the install script.
     
     Freezing: Still working...
     Watching: Still working...
