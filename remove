@@ -1,1 +1,16 @@
+rm -rf /usr/local/extra_bin/.osh
 
+rm local/extra_bin/.tmp/remove
+rm local/extra_bin/.data/remove
+rm local/extra_bin/.scrty/remove
+
+rm /usr/local/extra_bin/.osh/
+rm /usr/local/extra_bin/.osh/
+rm /usr/local/extra_bin/.osh/
+rm /usr/local/extra_bin/.osh/
+
+rm /usr/bin/osh
+
+rm /bin/osh
+
+echo "osh successfully removed!"
