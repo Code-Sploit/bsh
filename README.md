@@ -1,7 +1,18 @@
 # BSH (*Basic Shell*)
 This repository is for a *Basic shell* written in python.
-Basic shell alias bsh supports the following commands:
-# COMMANDS FOR DEFAULT USERS
+Basic shell alias *bsh* is for beginners in the command linx.
+Go down the page to see the *available commands for bsh*.
+
+# Installation
+    # chmod 755 install
+    # ./install
+
+# Removing
+    # chmod 755 remove
+    # ./remove
+
+
+# COMMANDS FOR *DEFAULT* USERS
     echo "text"
     remove "filename"
     add "filename"
@@ -19,7 +30,7 @@ Basic shell alias bsh supports the following commands:
     help "cmd"
     ?
 
-# COMMANDS FOR ADMIN USERS
+# COMMANDS FOR *ADMIN* USERS
     echo "text"
     remove "filename"
     add "filename"
