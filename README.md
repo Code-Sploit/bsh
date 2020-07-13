@@ -7,8 +7,6 @@ Basic shell alias bsh supports the following commands:
     add "filename"
     edit "filename"
     diradd "name"
-    setowner "name" "file"
-    setpremissions "premissions" "file"
     list or list "/path/to/directory"
     listall or listall "/path/to/directory"
     clear
