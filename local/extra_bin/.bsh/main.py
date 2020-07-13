@@ -28,7 +28,7 @@ class AdminPrompt(Cmd):
     def do_remove(self, inp):
         '''\nRemove file.\n\nUsage: remove "filename"'''
         try:
-            os.remove(str(inp))
+            os.system("rm -rf " + str(inp))
         except Exception as e:
             print(e)
     
@@ -143,7 +143,7 @@ class MyPrompt(Cmd):
     def do_remove(self, inp):
         '''\nRemove file.\n\nUsage: remove "filename"'''
         try:
-            os.remove(str(inp))
+            os.system("rm -rf " + str(inp))
         except Exception as e:
             print(e)
     
