@@ -1,7 +1,9 @@
 # BSH (*Basic Shell*)
 This repository is for a *Basic shell* written in python.
-Basic shell alias *bsh* is for beginners in the command linx.
-Go down the page to see the *available commands for bsh*.
+
+Basic shell alias *bsh* is for beginners in the command line.
+
+If you want to see the *available commands for bsh* then go down the page.
 
 # Installation
     # chmod 755 install
@@ -11,6 +13,14 @@ Go down the page to see the *available commands for bsh*.
     # chmod 755 remove
     # ./remove
 
+# MORE INFO
+    *bsh* is a system that works with sessions.
+    If you choose a username in the shell then you get a session named $username.active.u .
+    Which is located at $bshdir/tmp/a/ .
+    Also you get a pid for starting the python script, that file is located in $bshdir/.data/p/ .
+    
+    Freezing: Still working...
+    Watching: Still working...
 
 # COMMANDS FOR *DEFAULT* USERS
     echo "text"
@@ -50,11 +60,3 @@ Go down the page to see the *available commands for bsh*.
     listadmins
     help "cmd"
     ?
-
-# Installation
-    # chmod 755 install
-    # ./install
-
-# Removing
-    # chmod 755 remove
-    # ./remove
