@@ -20,7 +20,14 @@ class AdminPrompt(Cmd):
         os.remove("/usr/local/extra_bin/.osh/.data/aa/" + str(username))
         os.system("touch /usr/local/extra_bin/.osh/.data/au/" + str(username))
         return True
-
+    
+    def do_edit(self, inp):
+        '''\nEdit a file.\n\nUsage: edit "filename"'''
+        try:
+            os.system("vim " + str(inp))
+        except Exception as e:
+            print(e)
+    
     def do_echo(self, inp):
         '''\nEcho text.\n\nUsage: echo "text"'''
         print(inp)
@@ -139,7 +146,13 @@ class MyPrompt(Cmd):
     def do_echo(self, inp):
         '''\nEcho text.\n\nUsage: echo "text"'''
         print(inp)
-
+    
+    def do_edit(self, inp):
+        '''\nEdit a file.\n\nUsage: edit "filename"'''
+        try:
+            os.system("vim " + str(inp))
+        except Exception as e:
+            print(e)
     def do_remove(self, inp):
         '''\nRemove file.\n\nUsage: remove "filename"'''
         try:
