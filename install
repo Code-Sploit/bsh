@@ -1,0 +1,17 @@
+mkdir -p /usr/local/extra_bin/.osh
+
+rm local/extra_bin/.tmp/remove
+rm local/extra_bin/.data/remove
+rm local/extra_bin/.scrty/remove
+
+mv .tmp /usr/local/extra_bin/.osh/
+mv .data /usr/local/extra_bin/.osh/
+mv .scrty /usr/local/extra_bin/.osh/
+mv bin/main.py /usr/local/extra_bin/.osh/
+
+echo "python3 /usr/local/extra_bin/.osh/main.py" > /usr/bin/osh
+
+ln -sf /usr/bin/osh /bin/osh
+
+echo "osh successfully installed!"
+echo -e "\nrun with osh"
