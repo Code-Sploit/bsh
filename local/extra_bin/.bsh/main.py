@@ -183,23 +183,6 @@ class MyPrompt(Cmd):
         except Exception as e:
             print(e)
     
-    def do_setowner(self, inp):
-        '''\nSets owner of directory/file.\n\nUsage: setowner "name" "file"'''
-        name = inp.split(" ")[0]
-        filename = inp.split(" ")[1]
-        try:
-            os.system("chown " + str(name) + " " + str(filename))
-        except Exception as e:
-            print(e)
-    def do_setpremissions(self, inp):
-        '''\nSet premissions of directory/file.\n\nUsage: setpremissions "premissions" "file"'''
-        premisssions = inp.split(" ")[0]
-        filename = inp.split(" ")[1]
-        try:
-            os.system("chmod " + str(premissions) + " " + str(filename))
-        except Exception as e:
-            print(e)
-    
     def do_edit(self, inp):
         '''\nEdit a file.\n\nUsage: edit "filename"'''
         try:
