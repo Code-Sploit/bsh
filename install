@@ -20,6 +20,9 @@ cat < bin/bsh > /usr/bin/bsh
 
 ln -sf /usr/bin/bsh /bin/bsh
 
+chmod 755 /usr/bin/bsh
+chmod 755 /bin/bsh
+
 echo "One last step: "
 echo "type: sudo echo 'mypasswd' > /usr/local/extra_bin/.bsh/.scrty/adminpass.txt"
 
