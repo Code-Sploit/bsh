@@ -2,9 +2,9 @@ from cmd import Cmd
 import os
 from getpass import getpass
 username = input(str("Logon as: "))
-if (os.path.isfile(".data/au/" + str(username))):
+if (os.path.isfile("/usr/local/extra_bin/.bsh/.data/au/" + str(username))):
     print("Sorry that username is already in use!")
-elif (os.path.isfile(".data/aa/" + str(username))):
+elif (os.path.isfile("/usr/local/extra_bin/.bsh/.data/aa/" + str(username))):
     print("Sorry that username is already in use!")
 else:
     pass
@@ -17,8 +17,8 @@ class AdminPrompt(Cmd):
     def do_exit(self, inp):
         '''\nExits the program.\n\nUsage: exit'''
         print("Bye")
-        os.remove("/usr/local/extra_bin/.osh/.data/aa/" + str(username))
-        os.system("touch /usr/local/extra_bin/.osh/.data/au/" + str(username))
+        os.remove("/usr/local/extra_bin/.bsh/.data/aa/" + str(username))
+        os.system("touch /usr/local/extra_bin/.bsh/.data/au/" + str(username))
         return True
     
     def do_diradd(self, inp):
@@ -137,33 +137,33 @@ class AdminPrompt(Cmd):
     
     def do_kick(self, inp):
          '''\nKicks a user.\n\nUsage: kick "user"'''
-         with open("/usr/local/extra_bin/.osh/.tmp/p/" + str(inp) + ".pid","r") as f:
+         with open("/usr/local/extra_bin/.bsh/.tmp/p/" + str(inp) + ".pid","r") as f:
              string = f.read()
              os.system("kill " + str(string))
     
     def do_listusers(self, inp):
         '''\nList all users.\n\nUsage: listusers'''
-        print("Users are: " + str(os.popen("ls /usr/local/extra_bin/.osh/.data/au/").read()))
+        print("Users are: " + str(os.popen("ls /usr/local/extra_bin/.bsh/.data/au/").read()))
     
     def do_listadmins(self, inp):
         '''\nList all admins.\n\nUsage: listadmins'''
-        print("Admins are: " + str(os.popen("ls /usr/local/extra_bin/.osh/.data/aa/").read()))
+        print("Admins are: " + str(os.popen("ls /usr/local/extra_bin/.bsh/.data/aa/").read()))
 
 class MyPrompt(Cmd):
     global username
     prompt = str(username) + "@user-id" + " omega-sh> "
     intro = "Welcome to the user omega shell!"
     
-    with open("/usr/local/extra_bin/.osh/.tmp/p/" + str(username) + ".pid","w") as f:
+    with open("/usr/local/extra_bin/.bsh/.tmp/p/" + str(username) + ".pid","w") as f:
         f.write(str(os.getpid()))
     
-    os.system("touch /usr/local/extra_bin/.osh/.data/au/" + str(username))
+    os.system("touch /usr/local/extra_bin/.bsh/.data/au/" + str(username))
     
     def do_exit(self, inp):
         '''\nExits the program.\n\nUsage: exit'''
         print("Bye")
-        os.remove("/usr/local/extra_bin/.osh/.data/au/" + str(username))
-        os.remove("/usr/local/extra_bin/.osh/.tmp/p/" + str(username) + ".pid")
+        os.remove("/usr/local/extra_bin/.bsh/.data/au/" + str(username))
+        os.remove("/usr/local/extra_bin/.bsh/.tmp/p/" + str(username) + ".pid")
         return True
 
     def do_echo(self, inp):
@@ -271,7 +271,7 @@ class MyPrompt(Cmd):
 
     def do_lgnadmin(self, inp):
         '''\nMake admin.\n\nUsage: mkadmin - or mkadmin "user"'''
-        with open("/usr/local/extra_bin/.osh/.scrty/adminpass.txt","r") as f:
+        with open("/usr/local/extra_bin/.bsh/.scrty/adminpass.txt","r") as f:
             adminpass = f.read()
 
         passg = getpass(str("Password: "))
@@ -280,8 +280,8 @@ class MyPrompt(Cmd):
         if (adminpass == passg):
             print("You are now admin!")
             print(str(username))
-            os.remove("/usr/local/extra_bin/.osh/.data/au/" + str(username))
-            os.system("touch /usr/local/extra_bin/.osh/.data/aa/" + str(username))
+            os.remove("/usr/local/extra_bin/.bsh/.data/au/" + str(username))
+            os.system("touch /usr/local/extra_bin/.bsh/.data/aa/" + str(username))
             AdminPrompt().cmdloop()
         else:
             print("Invalid password!")
