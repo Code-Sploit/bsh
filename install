@@ -9,9 +9,9 @@ mkdir local/extra_bin/.bsh/.tmp/a/
 mkdir local/extra_bin/.bsh/.data/p/
 
 mv local/extra_bin/.bsh/.tmp/* /usr/local/extra_bin/.bsh/
-mv bin/main.py /usr/local/extra_bin/.bsh/
+mv local/extra_bin/.bsh/main.py /usr/local/extra_bin/.bsh/
 
-echo "python3 /usr/local/extra_bin/.bsh/main.py" > /usr/bin/osh
+cat < bin/bsh > /usr/bin/bsh
 
 ln -sf /usr/bin/bsh /bin/bsh
 
