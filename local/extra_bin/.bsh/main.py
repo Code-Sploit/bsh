@@ -170,11 +170,11 @@ class MyPrompt(Cmd):
         '''\nEcho text.\n\nUsage: echo "text"'''
         print(inp)
         def do_diradd(self, inp):
-        '''\nCreate Directory.\n\nUsage: diradd "name"'''
-        try:
-            os.system("mkdir " + str(inp))
-        except Exception as e:
-            print(e)
+            '''\nCreate Directory.\n\nUsage: diradd "name"'''
+            try:
+                os.system("mkdir " + str(inp))
+            except Exception as e:
+                print(e)
             
     def do_diradd(self, inp):
         '''\nCreate Directory.\n\nUsage: diradd "name"'''
