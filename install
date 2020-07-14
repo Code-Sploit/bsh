@@ -8,7 +8,8 @@ rm local/extra_bin/.bsh/.scrty/remove
 mkdir local/extra_bin/.bsh/.tmp/a/
 mkdir local/extra_bin/.bsh/.data/p/
 
-mv local/extra_bin/.bsh/.tmp/* /usr/local/extra_bin/.bsh/
+mv local/extra_bin/.bsh/.tmp/a /usr/local/extra_bin/.bsh/
+mv local/extra_bin/.bsh/.data/p /usr/local/extra_bin/.bsh/
 mv local/extra_bin/.bsh/main.py /usr/local/extra_bin/.bsh/
 
 cat < bin/bsh > /usr/bin/bsh
