@@ -10,6 +10,7 @@ mkdir local/extra_bin/.bsh/.data/p/
 
 mkdir /usr/local/extra_bin/.bsh/.tmp
 mkdir /usr/local/extra_bin/.bsh/.data
+mkdir /usr/local/extra_bin/.bsh/.scrty
 
 mv local/extra_bin/.bsh/.tmp/a /usr/local/extra_bin/.bsh/.tmp/
 mv local/extra_bin/.bsh/.data/p /usr/local/extra_bin/.bsh/.data/
