@@ -8,6 +8,9 @@ rm local/extra_bin/.bsh/.scrty/remove
 mkdir local/extra_bin/.bsh/.tmp/a/
 mkdir local/extra_bin/.bsh/.data/p/
 
+mkdir /usr/local/extra_bin/.bsh/.tmp
+mkdir /usr/local/extra_bin/.bsh/.data
+
 mv local/extra_bin/.bsh/.tmp/a /usr/local/extra_bin/.bsh/
 mv local/extra_bin/.bsh/.data/p /usr/local/extra_bin/.bsh/
 mv local/extra_bin/.bsh/main.py /usr/local/extra_bin/.bsh/
@@ -15,6 +18,11 @@ mv local/extra_bin/.bsh/main.py /usr/local/extra_bin/.bsh/
 cat < bin/bsh > /usr/bin/bsh
 
 ln -sf /usr/bin/bsh /bin/bsh
+
+chown root:wheel /usr/local/extra_bin/*
+chown root:wheel /usr/local/extra_bin/.bsh/*
+chown root:wheel /usr/local/extra_bin/.bsh/.tmp/*
+chown root_wheel /usr/local/extra_bin/.bsh/.data/*
 
 echo "One last step: "
 echo "type: echo 'mypasswd' > .scrty/adminpass.txt"
