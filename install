@@ -20,7 +20,7 @@ cat < bin/bsh > /usr/bin/bsh
 ln -sf /usr/bin/bsh /bin/bsh
 
 echo "One last step: "
-echo "type: echo 'mypasswd' > .scrty/adminpass.txt"
+echo "type: sudo echo 'mypasswd' > /usr/local/extra_bin/.bsh/.scrty/adminpass.txt"
 
 echo "bsh successfully installed!"
 echo -e "\nrun with bsh"
